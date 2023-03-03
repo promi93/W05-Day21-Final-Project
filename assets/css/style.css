@@ -9,9 +9,10 @@ body {
   padding-left: 100px;
 }
 
-.marginLeft p {
+h2 > p {
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
+  font-size: 20px !important;
 }
 
 .marginRight {
@@ -50,6 +51,7 @@ nav {
 }
 
 button {
+  cursor: pointer;
   border: none;
   background: none;
   padding: 0.75em;
@@ -98,19 +100,14 @@ main {
 }
 
 #secondaryNav > div > h2 {
-  letter-spacing: -5px;
   font-size: 4.5em;
   margin: 0 0 0.25em 0;
-}
-
-#secondaryNav > div > p {
-  font-size: 1.9em;
-  margin: 0 0 0.5em 0;
 }
 
 #secondaryNav > div > button {
   width: fit-content;
   font-size: 1em;
+  margin-top: 50px;
 }
 
 .icon {
@@ -171,6 +168,15 @@ main {
   display: flex;
   flex-direction: row;
   margin: 1em 0;
+}
+
+.cardNav img {
+  width: 2%;
+}
+
+.cardNav > p {
+  font-size: 10px;
+  color: rgb(167, 161, 161);
 }
 
 .cardList {
