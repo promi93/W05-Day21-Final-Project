@@ -1,0 +1,333 @@
+/*GENERAL*/
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.marginLeft {
+  padding-left: 100px;
+}
+
+.marginLeft p {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
+
+.marginRight {
+  padding-right: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .marginLeft {
+    padding-left: 50px;
+  }
+  .marginRight {
+    padding-right: 50px;
+  }
+}
+
+.b {
+  font-weight: bolder;
+}
+
+/*header*/
+
+#topBar {
+  padding: 1em;
+  background-color: #ffc017;
+  border-bottom: solid 1px black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  transition: 1s;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0.75em;
+  transition: 1s;
+}
+
+.alternate-btn {
+  color: gray;
+  background-color: rgba(206, 193, 193, 0.216);
+}
+
+button.getstarted {
+  background-color: black;
+  border-radius: 50px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .shadowbutton {
+    display: none !important;
+  }
+}
+
+/* secondary nav */
+
+main {
+  padding-top: 68px;
+}
+
+#secondaryNav {
+  font-family: Spectral, san serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: #ffc017;
+  border-bottom: solid 1px black;
+}
+
+#secondaryNav > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 200px;
+  min-width: 200px;
+}
+
+#secondaryNav > div > h2 {
+  letter-spacing: -5px;
+  font-size: 4.5em;
+  margin: 0 0 0.25em 0;
+}
+
+#secondaryNav > div > p {
+  font-size: 1.9em;
+  margin: 0 0 0.5em 0;
+}
+
+#secondaryNav > div > button {
+  width: fit-content;
+  font-size: 1em;
+}
+
+.icon {
+  border-radius: 100%;
+  width: 15%;
+  margin-right: 0.5em;
+}
+
+.icon-star {
+  width: 10%;
+}
+
+#secondaryNav svg {
+  position: relative;
+  max-width: 45%;
+  min-width: 30%;
+}
+
+#fatherG > g {
+  transition: 1s;
+}
+
+@media screen and (max-width: 768px) {
+  #secondaryNav > div > h2 {
+    letter-spacing: -5px;
+    font-size: 4em;
+    margin: 0 0 0.25em 0;
+  }
+
+  #secondaryNav > div > p {
+    font-size: 1.5em;
+    margin: 0 0 0.5em 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #secondaryNav > div > h2 {
+    letter-spacing: -5px;
+    font-size: 3em;
+    margin: 0 0 0.25em 0;
+  }
+
+  #secondaryNav > div > p {
+    font-size: 1.2em;
+    margin: 0 0 0.5em 0;
+  }
+}
+
+/* card section */
+
+#cardsSection {
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 1px black;
+}
+
+.cardNav {
+  display: flex;
+  flex-direction: row;
+  margin: 1em 0;
+}
+
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cardItem {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  margin: 0 1em 1em 0;
+}
+
+.cardNumber {
+  font-size: 1.5em;
+  padding: 0.4em;
+  color: rgba(121, 121, 121, 0.525);
+  font-family: "Roboto", sans-serif;
+}
+
+.cardData {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardData img {
+  margin-right: 0.5em;
+}
+
+.cardData div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* articles section */
+
+#footerSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+#articlesSection {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+}
+
+.articleItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1em;
+}
+
+.articleData {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 1em;
+}
+
+.articleAutor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.articleAutor img {
+  border-radius: 100px;
+  margin-right: 1em;
+}
+
+.articleTitle {
+  font-size: 1.25em;
+}
+
+.articleFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.articleFooter > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(167, 165, 165);
+}
+
+.articleFooter button {
+  background-color: rgba(211, 211, 211, 0.326);
+  color: gray;
+  border-radius: 50px;
+}
+
+.subTitle {
+  color: rgb(167, 165, 165);
+}
+
+.imgArticle {
+  width: 200px;
+  height: 175px;
+  margin: 1em;
+}
+
+@media screen and (max-width: 750px) {
+  .imgArticle {
+    display: none;
+  }
+}
+
+/* aside section*/
+
+#asideSection {
+  width: 33%;
+  padding: 5%;
+}
+
+#asideSection .discoverMore {
+  border-bottom: solid 1px black;
+}
+
+.discoverMore div {
+  margin-bottom: 1em;
+}
+
+.discoverMore button {
+  font-size: 0.7em;
+  border: solid 1px gray;
+  margin: 0.5em;
+}
+
+#asideSection .helper {
+  color: gray;
+}
+
+.helper {
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 1100px) {
+  #footerSection {
+    flex-direction: column-reverse;
+  }
+
+  #articlesSection {
+    width: 100%;
+  }
+
+  #asideSection {
+    width: 90%;
+    padding: 5%;
+  }
+}
